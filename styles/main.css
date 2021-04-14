@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 
 :root {
     --color-orange: #e69807;
     --color-parda: #9c9876;
+    --color-black: black;
+    --color-symbol: rgb(136, 124, 124);
 }
 
 *{
@@ -12,16 +15,46 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #3c415a;
+h1, h2, h3 {
     font-family: 'Source Sans Pro', sans-serif;
-    color: white;
+}
+
+body {
+    /* background: #3c415a; */
+    background-color: rgb(243, 242, 242);
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--color-black);
 }
 
 header {
-    padding: 32px;
-    border-bottom: 1px solid rgb(97, 96, 96);
-    background: #3b3d52ab;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* border-bottom: 1px solid rgb(97, 96, 96); */
+    /* background: #3b3d52ab; */
+}
+
+header .links {
+    text-align: right;
+}
+
+header .symbol a,
+footer .symbol a {
+    font-size: 25px;
+    font-family: 'RocknRoll One', sans-serif;
+    color: var(--color-symbol);
+    text-decoration: none;
+
+    position: relative;
+}
+
+header .symbol img {
+    height: 20px;
+    width: 20px;
+
+    position: absolute;
+
+    top: 30px;
 }
 
 .links {
@@ -29,57 +62,196 @@ header {
 }
 
 .links a {
-    color: white;
-    font-size: 22px;
+    color: rgb(31, 20, 20);
+    font-size: 18px;
     line-height: 32px;
     margin: 0 16px;
     text-decoration: none;
 }
 
 .links a:hover {
-    color: var(--color-orange);
+    color: var(--color-symbol);
     transition: color 300ms;
 }
 
+.hello {
+    padding: 65px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0D1017;
+
+    position: relative;
+    /* border-bottom: 4px rgb(93, 192, 73) solid; */
+}
+
 #wrapper {
+    display: flex;
+    
     text-align: center;
-    padding: 32px;
+    align-items: center;
+
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    bottom: 60px;
+}
+
+#wrapper h1 {
+    font-family: 'RocknRoll One', sans-serif;
+    color: var(--color-symbol);   
 }
 
 #wrapper img {
     border-radius: 50%;
+    width: 250px;
     height: 250px;
-    border: 2px var(--color-orange) solid;
-    margin-bottom: 32px;
+    border: 4px white solid;
+    margin-bottom: 8px;
 }
 
-#wrapper h1 {
-    font-size: 42px;
-    line-height: 52px;
-    font-weight: bold;
+.about {
+    display: flex;
+
+    height: 150px;
+    margin-top: 295px;
+    background-color: rgb(238, 235, 235);
+
+    align-items: center;
+    justify-content: center;
 }
 
-#wrapper h2 {
-    font-size: 24px;
-    line-height: 34px;
-    font-weight: normal;
-    margin-top: 8px;
-    opacity: 0.8;
+.about .title{
+    width: 150px;
 }
 
-#wrapper p {
-    max-width: 500px;
-    margin: 10px auto 32px;
-    font-size: 24px;
-    line-height: 34px;
+.about .informations {
+    width: 690px;
+    color: rgb(51, 45, 45);
+    text-align: justify;
+}
+
+.tech {
+    background-color: rgb(238, 235, 235);
+
+    height: 350px;
+
+    padding: 40px;
+}
+
+
+.pilha {
+    display: flex;
+    border: 5px solid #27d54465;
+
+    height: 30px;
+    width: 377px;
+}
+
+.status-pilha {
+    border: 1px solid black;
+
+    height: 20px;
+    width: 15px;
+
+    align-self: center;
+    padding-left: 20px;
+    margin-right: 1px;
+}
+
+.contact {
+    display: flex;
+    background-color: #27d54444;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-bottom: 50px;
+}
+
+.contact h2 {
+    padding: 50px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    background-color: white;
+    height: 300px;
+    width: 400px;
+
+    padding-left: 65px;
+}
+
+.card h2 {
+    color: #27d544c2;
+    padding: 25px 0 0;
+
+    font-weight: 600;
+}
+
+.card .one h2 {
+    padding-top: 0;
+}
+
+.card-links {
+    display: flex;
+    
+    height: 200px;
+    width: 400px;
 }
 
 .links a img {
-    width: 50px;
+    width: 20px;
+
+    background-color: #27d54444;
+    border-radius: 50%;
+    margin: 20px;
 }
 
 .links a img:hover {
-    background-color: var(--color-orange);
+    background-color: var(--color-symbol);
     transition: color 300ms;
     border-radius: 50%;
 }
+
+footer{
+    display: flex;
+    
+    position: absolute;
+    width: 100%;
+    background-color: #27d54444;
+
+    padding: 30px 0;
+}
+
+
+footer .symbol {
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+footer .symbol img {
+    height: 20px;
+    width: 20px;
+
+    position: absolute;
+
+    bottom: 63px;
+}
+
+footer p {
+    font-size: 10px;
+    font-family: 'RocknRoll One', sans-serif;
+    color: var(--color-symbol);  
+}
+
+footer .symbol a {
+    font-size: 18px;
+}
+
+
