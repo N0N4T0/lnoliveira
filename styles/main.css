@@ -6,6 +6,8 @@
     --color-parda: #9c9876;
     --color-black: black;
     --color-symbol: rgb(136, 124, 124);
+    --color-green-dark: #b3da49;
+    --color-green: #eefcc877;
 }
 
 *{
@@ -21,7 +23,7 @@ h1, h2, h3 {
 
 body {
     /* background: #3c415a; */
-    background-color: rgb(243, 242, 242);
+    background-color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
     color: var(--color-black);
 }
@@ -30,8 +32,19 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    /* border-bottom: 1px solid rgb(97, 96, 96); */
-    /* background: #3b3d52ab; */
+
+    background-color: #fff;
+
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.185); */
+
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.11);
+
+
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+
+    height: 77px;
 }
 
 header .links {
@@ -72,20 +85,23 @@ header .symbol img {
 .links a:hover {
     color: var(--color-symbol);
     transition: color 300ms;
+
+    text-decoration: underline var(--color-green-dark);
 }
 
 .hello {
-    padding: 65px 0;
+    height: 450px;
+
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #0D1017;
 
     position: relative;
-    /* border-bottom: 4px rgb(93, 192, 73) solid; */
 }
 
-#wrapper {
+.wrapper {
     display: flex;
     
     text-align: center;
@@ -97,16 +113,22 @@ header .symbol img {
     bottom: 60px;
 }
 
-#wrapper h1 {
+.wrapper h1 {
     font-family: 'RocknRoll One', sans-serif;
     color: var(--color-symbol);   
 }
 
-#wrapper img {
+.wrapper h3 {
+    font-family: 'RocknRoll One', sans-serif;
+    color: var(--color-black);
+    font-weight: 400;   
+}
+
+.wrapper img {
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    border: 4px white solid;
+    border: 4px var(--color-green-dark) solid;
     margin-bottom: 8px;
 }
 
@@ -115,7 +137,15 @@ header .symbol img {
 
     height: 150px;
     margin-top: 295px;
-    background-color: rgb(238, 235, 235);
+    
+    /* background-color: #e7ffeeea; */
+
+    /* background-color: #abc07377; */
+    
+    background-color: var(--color-green);
+
+
+    /* background-color: #ecf7fe; */
 
     align-items: center;
     justify-content: center;
@@ -132,11 +162,14 @@ header .symbol img {
 }
 
 .tech {
-    background-color: rgb(238, 235, 235);
-
     height: 350px;
 
     padding: 40px;
+}
+
+.tech h1 {
+    text-align: center;
+    margin-bottom: 55px;
 }
 
 
@@ -161,13 +194,17 @@ header .symbol img {
 
 .contact {
     display: flex;
-    background-color: #27d54444;
+    background-color: var(--color-green);
 
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     padding-bottom: 50px;
+}
+
+.fab.fa-whatsapp{
+    font-weight: bolder;
 }
 
 .contact h2 {
@@ -178,37 +215,92 @@ header .symbol img {
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
+    justify-content: space-evenly;
 
-    background-color: white;
+    background-color:#fff;
     height: 300px;
     width: 400px;
 
-    padding-left: 65px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.11);
+}
+
+.card i {
+    color: var(--color-green-dark);
 }
 
 .card h2 {
-    color: #27d544c2;
+    color: var(--color-green-dark);
     padding: 25px 0 0;
 
-    font-weight: 600;
+    font-weight: 500;
+}
+
+.card h3 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.contact .card .one {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+
+    padding-left: 40px;
 }
 
 .card .one h2 {
     padding-top: 0;
 }
 
+.contact .card a:hover i{
+    color: var(--color-symbol);
+}
+
 .card-links {
     display: flex;
     
-    height: 200px;
-    width: 400px;
+    height: 145px;
+
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-green-dark);
+
+    margin: 0 10px;
+    
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+
+    text-decoration: none;
+}
+
+.card-links a:hover {
+    transform: translateY(-4px);
+}
+
+.card-links i {
+    color: var(--color-black);
+    font-size: 18px;
+
+    font-weight: normal;
 }
 
 .links a img {
     width: 20px;
 
-    background-color: #27d54444;
+    background-color: var(--color-green-dark);
     border-radius: 50%;
     margin: 20px;
 }
@@ -219,12 +311,13 @@ header .symbol img {
     border-radius: 50%;
 }
 
+
 footer{
     display: flex;
     
     position: absolute;
     width: 100%;
-    background-color: #27d54444;
+    background-color: var(--color-green);
 
     padding: 30px 0;
 }

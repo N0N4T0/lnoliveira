@@ -3,33 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lúcio Oliveira</title>
+        <title>Lúcio Oliveira - Portfolio</title>
 
+        <script src="https://kit.fontawesome.com/6a76506322.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./styles/main.css">
     </head>
 
     <body>
         <header class="container">
             <div class="symbol">
-                <a href="#">lnoliveir</a>
+                <a href="#topo">LNOliveir</a>
                 <img src="assets/xicara-de-cafe.svg" alt="">
             </div>
            <div class="links">
                 <a href="#about">Sobre mim</a>
-                <a href="#">Tecnologias</a>
-                <a href="#">Projetos</a>
+                <a href="#tech">Tecnologias</a>
+                <!-- <a href="#">Projetos</a> -->
                 <a href="#contact">Contato</a>
            </div>
         </header>
 
         
-        <div class="hello">
+        <div class="hello" id="topo">
             <img src="assets/githubLearning.jpg" alt="" class="setup">
         </div>
 
-        <div id="wrapper">
+        <div class="wrapper">
             <img src="https://avatars3.githubusercontent.com/u/39486464?s=460&u=a2198b2ca6f7bbba2567f26f1fde726bdd7445ab&v=4" alt="Lúcio Oliveira">
             <h1>Oi, eu sou Lúcio Oliveira!</h1>
+            <h3>Desenvolvedor Web</h3>
         </div>
 
         <div id="about" class="about">
@@ -70,37 +72,51 @@
             <h2>Contato</h2>
             <div class="card">
                 <div class="one">
-                    <h2>Localização:</h2>
-                    <h3>Salvador - BA, Brasil</h3>
+                    <a href="#">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <div class="contact-info">
+                        <h2>Localização:</h2>
+                        <h3>Salvador - BA, Brasil</h3>
+                    </div>
                 </div>
-                <div>
-                    <h2>E-mail:</h2>
-                    <h3>luciononato@hotmail.com</h3>
+                <div class="one">
+                    <a href="#">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <div class="contact-info">
+                        <h2>E-mail:</h2>
+                        <h3>luciononato@hotmail.com</h3>
+                    </div>
                 </div>
-                <div>
-                    <h2>Telefone:</h2>
-                    <h3>(71) 99248-3550</h3>
+                <div class="one">
+                    <a href="https://api.whatsapp.com/send?phone=5571992483550" target="blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <div class="contact-info">
+                        <h2>Telefone:</h2>
+                        <h3>(71) 99248-3550</h3>
+                    </div>
                 </div>
             </div>          
         </div>
         
         <div class="card-links">
-            <div class="links">
-                <a href="https://github.com/N0N4T0?tab=repositories" target="blank">
-                    <img src="./assets/github.svg" alt="Github">
-                </a>
-                <a href="https://www.linkedin.com/in/l%C3%BAcio-nonato/" target="blank">
-                    <img src="./assets/linkedin.svg" alt="Linkedin">
-                </a>
-                <a href="#">
-                    <img src="assets/whatsapp.svg" alt="Whatszapp">
-                </a>
-            </div>
+            <a href="https://github.com/N0N4T0?tab=repositories" target="blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/l%C3%BAcio-nonato/" target="blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5571992483550" target="blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+                
         </div>
 
         <footer>
             <div class="symbol">
-                <a href="#">lnoliveir</a>
+                <a href="#">LNOliveir</a>
                 <img src="assets/xicara-de-cafe.svg" alt="">
                 <p>2021</p>
             </div>
