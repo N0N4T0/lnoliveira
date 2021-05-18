@@ -34,6 +34,9 @@
     border-radius: 5px;
 }
 
+a{
+    text-decoration: none;  
+}
 
 h1, h2, h3 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -65,24 +68,9 @@ header .links {
     text-align: right;
 }
 
-header .symbol a,
-footer .symbol a {
-    font-size: 25px;
-    font-family: 'RocknRoll One', sans-serif;
-    color: var(--color-symbol);
-    text-decoration: none;
-
-    position: relative;
-}
-
-header .symbol p {
-    font-size: 25px;
-    font-family: 'RocknRoll One', sans-serif;
-    color: var(--color-symbol);
-    
-    position: absolute;
-    top: 23px;
-    left: 136px;
+.logo{
+    width: 150px;
+    height: 37px;
 }
 
 .links {
@@ -113,7 +101,7 @@ header .symbol p {
     align-items: center;
     background-color: #0D1017;
 
-    position: relative;
+    /* position: relative; */
 }
 
 .wrapper {
@@ -122,10 +110,11 @@ header .symbol p {
     text-align: center;
     align-items: center;
 
-    position: absolute;
+    /* position: absolute; */
     flex-direction: column;
     width: 100%;
-    bottom: 60px;
+    margin-top: 35px;
+    /* bottom: 60px; */
 }
 
 .wrapper h1 {
@@ -151,7 +140,7 @@ header .symbol p {
     display: flex;
 
     height: 150px;
-    margin-top: 295px;
+    /* margin-top: 295px; */
     
     /* background-color: #e7ffeeea; */
 
@@ -373,35 +362,20 @@ footer{
     background-color: var(--color-green);
 
     padding: 30px 0;
+
+    justify-content: center;
 }
 
 
-footer .symbol {
-    padding: 15px 0;
-    margin: 0 auto;
+footer a img.logo{
+    width: 100px;
+    height: 25px;
 }
 
-footer .symbol a {
-    font-size: 18px;
-}
-
-footer .symbol p {
-    font-size: 18px;
-    position: absolute;
-
-    bottom: 58px;
-    right: 708px;
-}
-
-footer p,
-footer .symbol h3 {
+footer a p {
+    font-size: 13px;
     font-family: 'RocknRoll One', sans-serif;
-    color: var(--color-symbol);  
-}
-
-
-footer .symbol h3 {
-    font-size: 10px;
+    color: var(--color-symbol);
 }
 
 
@@ -429,37 +403,21 @@ footer .symbol h3 {
 
 /* Reponsividade */
 /* @media screen and (min-width: 1024px) and (max-width: 1534px) {
-    
+    footer .symbol p {
+        right: 708px;
+    }   
 } */
 
 @media screen and (min-width: 2000px) {
-    .wrapper {
-        bottom: 500px;
-    }
-
-    footer .symbol p {
-        right: 1222px;
-    }
+    
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1999px){
-    .wrapper{
-        bottom: -40px;
-    }
-
-    footer .symbol p {
-        right: 662px;
-    }
+    
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px){
-    .wrapper{
-        bottom: -40px;
-    }
-
-    footer .symbol p {
-        right: 454px;
-    }
+    
 
     .tech .tech-container {
         width: 900px;
@@ -484,5 +442,4 @@ footer .symbol h3 {
         margin: 0 auto;
     }
 
-    asd
 }
