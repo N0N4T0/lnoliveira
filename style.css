@@ -5,6 +5,7 @@
     --color-orange: #e69807;
     --color-parda: #9c9876;
     --color-black: black;
+    --color-black-less: rgb(31, 20, 20);
     --color-symbol: rgb(136, 124, 124);
     --color-green-dark: #b3da49;
     --color-green: #eefcc877;
@@ -68,9 +69,15 @@ header .links {
     text-align: right;
 }
 
-.logo{
-    width: 150px;
-    height: 37px;
+.container a div {
+    font-size: 20px;
+    padding-bottom: 1px;
+}
+
+.container a div+div {
+    font-size: 16px;
+    margin-block-start: auto;
+    padding: 0;
 }
 
 .links {
@@ -78,7 +85,7 @@ header .links {
 }
 
 .links a {
-    color: rgb(31, 20, 20);
+    color: var(--color-black-less);
     font-size: 18px;
     line-height: 32px;
     margin: 0 16px;
@@ -100,8 +107,6 @@ header .links {
     flex-direction: column;
     align-items: center;
     background-color: #0D1017;
-
-    /* position: relative; */
 }
 
 .wrapper {
@@ -110,11 +115,9 @@ header .links {
     text-align: center;
     align-items: center;
 
-    /* position: absolute; */
     flex-direction: column;
     width: 100%;
     margin-top: 35px;
-    /* bottom: 60px; */
 }
 
 .wrapper h1 {
@@ -140,16 +143,7 @@ header .links {
     display: flex;
 
     height: 150px;
-    /* margin-top: 295px; */
-    
-    /* background-color: #e7ffeeea; */
-
-    /* background-color: #abc07377; */
-    
     background-color: var(--color-white);
-
-
-    /* background-color: #ecf7fe; */
 
     align-items: center;
     justify-content: center;
@@ -195,8 +189,6 @@ header .links {
 }
 
 .tech .card-tech {
-    /* background-color: var(--color-white); */
-
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.664), rgba(231, 231, 231, 0));
 
     height: 100%;
@@ -209,8 +201,6 @@ header .links {
     
     border: 2px solid var(--color-green-dark);
     background-color: #fff;
-
-    /* background-color: #e69807; */
 }
 
 .tech .card-tech i {
@@ -220,7 +210,6 @@ header .links {
     font-size: 35px;
     margin-bottom: 15px;
 
-    /* color: var(--color-symbol); */
     color: var(--color-green-dark);
 }
 
@@ -354,6 +343,14 @@ header .links {
 }
 
 
+.logoName {
+    display: grid;
+    grid-template-columns: 1fr 20px;
+
+    font-family: 'RocknRoll One', sans-serif;
+    color: var(--color-symbol);
+}
+
 footer{
     display: flex;
     
@@ -367,13 +364,20 @@ footer{
 }
 
 
-footer a img.logo{
-    width: 100px;
-    height: 25px;
+footer a div {
+    font-size: 15px;
+    padding-bottom: 1px;
+}
+
+footer a div+div {
+    font-size: 13px;
+    margin-block-start: auto;
+    padding: 0;
 }
 
 footer a p {
     font-size: 13px;
+
     font-family: 'RocknRoll One', sans-serif;
     color: var(--color-symbol);
 }
