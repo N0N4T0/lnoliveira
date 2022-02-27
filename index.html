@@ -1,148 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lúcio Oliveira - Portfolio</title>
 
         <script src="https://kit.fontawesome.com/6a76506322.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./style.css">
-    </head>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="public/styles/sass/css/styles.css">
+
+        <title>LNOliveira</title>
+    </head>
     <body>
-        <header class="container">
-            <div class="symbol">
-                <a href="#topo">LNOliveir</a>
-                <p>@</p>
-            </div>
-           <div class="links">
-                <a href="#about">Sobre mim</a>
-                <a href="#tech">Tecnologias</a>
-                <!-- <a href="#">Projetos</a> -->
-                <a href="#contact">Contato</a>
-           </div>
+        <header>
+            <!-- <li>Home</li>
+            <li>Sobre</li>
+            <li>Skills</li>
+            <li>Serviços</li>
+            <li>Portfólio</li>
+            <li>Contato</li>
+            <li>Swit dark mode</li> -->
         </header>
 
-        <section class="github-progressive-code">
-            <div class="hello" id="topo">
-                <img src="assets/githubLearning.jpg" alt="" class="setup">
-            </div>
+        <section class="emphasis-container" id="emphasis">
+            <div class="photo"></div>
         </section>
 
-        <section class="picture-developer">
-            <div id="about" class="wrapper">
-                <img src="https://avatars3.githubusercontent.com/u/39486464?s=460&u=a2198b2ca6f7bbba2567f26f1fde726bdd7445ab&v=4" alt="Lúcio Oliveira">
-                <h1>Oi, eu sou Lúcio Oliveira!</h1>
-                <h3>Desenvolvedor Web</h3>
-            </div>
+        <section class="about-container" id="about">
+            <h2>Olá, sou Lúcio Nonato</h2>
+            <h3>Frontend Developer</h3>
+
+            <div>Impulsionado por novos desafios, entrego minha melhor experiência para obtenção de resultados.</div>
+
+            <img src="https://avatars.githubusercontent.com/u/39486464?v=4" alt="Developer Lúcio">
+
+            <div>Colocar mouse com scrool down</div>
         </section>
 
-        <section class="developer-informations">
-            <div  class="about">
-                <div class="title">
-                    <h2>Sobre mim</h2>
+        <div class="division-line-left1"></div>
+
+        <section class="qualification-container">
+            <div class="menu-qualification">
+                <div class="qualification education">QUALIFICAÇÃO</div>
+                <div class="qualification curses">CURSOS</div>
+            </div>
+
+            <div class="education-container">
+                <div class="container-title">
+                    <div class="title">
+                        <h3>
+                            Bacharelado Interdisciplinar em Ciência e Tecnologia.
+                        </h3>
+                        <h4>Ensino Superior - UFBA</h4>
+                        <p>Em andamento</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-battery-quarter"></i>
+                    </div>
+                    <div class="line-qualification"></div>
                 </div>
-                <div class="informations">
-                    <p>Graduando em Ciência da Computação.
-                    Busco aprendizado em novas tencologias/linguagens e experiência para desenvolver minhas habilidades de programação,
-                        trabalho em equipe, resolução de problemas, desenvolvimento web/frontend e otimização de sites. 
-                    </p>
-                </div>                
+                <!-- <div class="container-title2"></div>
+                <div class="container-title3"></div> -->
             </div>
+
         </section>
-
-        <section class="informations-tecnologies">
-            <div id="tech" class="tech">
-                <h1>Tecnologias</h1>
-                <div class="tech-container">
-                    <div class="card-tech" data-anime="left">
-                        <i class="fab fa-html5"></i>
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="card-tech" data-anime="left">
-                        <i class="fab fa-css3-alt"></i>
-                        <h3>CSS</h3>
-                    </div>
-                    <div class="card-tech" data-anime="left">
-                        <i class="fab fa-js-square"></i>
-                        <h3>JAVASCRIPT</h3>
-                    </div>
-                    <div class="card-tech" data-anime="left">
-                        <i class="fab fa-php"></i>
-                        <h3>PHP</h3>
-                    </div>
-                    <div class="card-tech" data-anime="left">
-                        <i class="fas fa-database"></i>
-                        <h3>PostgreSQL</h3>
-                    </div>
-                    <div class="card-tech" data-anime="left">
-                        <i class="fab fa-git-alt"></i>
-                        <h3>GIT</h3>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="card-links"></section>
-
-        <section class="informations-contact">
-            <div id="contact" class="contact">
-                <h2>Contato</h2>
-                <div class="card">
-                    <div class="one">
-                        <a href="#">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </a>
-                        <div class="contact-info">
-                            <h2>Localização:</h2>
-                            <h3>Salvador - BA, Brasil</h3>
-                        </div>
-                    </div>
-                    <div class="one">
-                        <a href="#">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <div class="contact-info">
-                            <h2>E-mail:</h2>
-                            <h3>luciononato@hotmail.com</h3>
-                        </div>
-                    </div>
-                    <div class="one">
-                        <a href="https://api.whatsapp.com/send?phone=5571992483550" target="blank">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <div class="contact-info">
-                            <h2>Telefone:</h2>
-                            <h3>(71) 99248-3550</h3>
-                        </div>
-                    </div>
-                </div>          
-            </div>
-        </section>
-            
-        <section class="handle-contact">
-            <div class="card-links">
-                <a href="https://github.com/N0N4T0" target="blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/lucio-nonato/" target="blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone=5571992483550" target="blank">
-                    <i class="fab fa-whatsapp"></i>
-                </a> 
-            </div>
-        </section>
-
-        <footer>
-            <div class="symbol">
-                <a href="#">LNOliveir</a>
-                <p>@</p>
-                <h3>2021</h3>
-            </div>
-        </footer>
     </body>
-
-    <script src="./script.js"></script>
 </html>
