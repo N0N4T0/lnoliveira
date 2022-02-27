@@ -11,4 +11,8 @@
     // height: 100px;
     width: 4px;
     background: $color2;
+
+    position: relative;
+    left: -20px;
+    z-index: -1;
 }
