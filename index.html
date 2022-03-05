@@ -45,11 +45,15 @@
 
         <section class="qualification-container">
             <div class="menu-qualification">
-                <div class="qualification education">QUALIFICAÇÃO</div>
-                <div class="qualification curses">CURSOS</div>
+                <div class="qualification education" id="defaultOpen">
+                    QUALIFICAÇÃO
+                </div>
+                <div class="qualification curses">
+                    CURSOS
+                </div>
             </div>
 
-            <div class="education-container">
+            <div class="education-container tabcontent" id="education">
                 <div class="container-title">
                     <div class="title">
                         <h3>
@@ -85,6 +89,44 @@
                 </div>
             </div>
 
+            <div class="curses-container tabcontent" id="curses">
+                <div class="container-title">
+                    <div class="title">
+                        <h3>
+                            Bootcamp ReactJS
+                        </h3>
+                        <h4>Rocketseat</h4>
+                        <p>Em andamento</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-battery-quarter"></i>
+                    </div>
+                    <div class="line-qualification"></div>
+                </div>
+                <div class="container-title1">
+                    <div class="title">
+                        <h3>
+                            Bootcamp React Native
+                        </h3>
+                        <h4>Rocketseat</h4>
+                        <p>Em andamento</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <div class="line-qualification"></div>
+                </div>
+                <div class="container-title">
+                    <div class="initial-icon-position">
+                        <div class="icon">
+                            <i class="fas fa-charging-station"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
+
+        <script src="public/javascript/menuQualifications.js"></script>
     </body>
 </html>
