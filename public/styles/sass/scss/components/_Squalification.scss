@@ -14,7 +14,12 @@
         width: 300px;
         height: 70px;
 
-        background: $color4;
+        // Ligt mode
+        // background: $color4;
+
+        // Dark Mode
+        background: $color10;
+
         border-radius: 4px;
 
         .qualification{
@@ -69,7 +74,11 @@
                 align-items: center;
                 justify-content: center;
     
-                background: $color4;
+                 // Ligt mode
+                // background: $color4;
+
+                // Dark Mode
+                background: $color10;
     
                 i{
                     color: $color2;
@@ -80,7 +89,7 @@
         // Ícone Inicial
         .container-title{
             .initial-icon-position{
-                margin: 0 0 0 31%;
+                margin: 0 0 0 33.7%;
             }
         }
 
@@ -128,7 +137,11 @@
                 align-items: center;
                 justify-content: center;
     
-                background: $color4;
+                // Ligt mode
+                // background: $color4;
+
+                // Dark Mode
+                background: $color10;
     
                 i{
                     color: $color2;
@@ -139,7 +152,7 @@
         // Ícone Inicial
         .container-title{
             .initial-icon-position{
-                margin: 0 0 0 31%;
+                margin: 0 0 0 28.2%;
             }
         }
 
