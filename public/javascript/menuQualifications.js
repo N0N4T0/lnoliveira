@@ -17,7 +17,6 @@ qualifications.addEventListener('click', (event)=>{
 
 // Mostrar hitórico
 function showHistoric(event, formation) {
-    console.log(formation)
     // Declare all variables
     let i, tabcontent, qualification;
 
